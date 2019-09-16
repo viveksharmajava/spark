@@ -46,7 +46,7 @@ public class JavaAFTSurvivalRegressionExample {
   public static void main(String[] args) {
     SparkSession spark = SparkSession
       .builder()
-      .appName("JavaAFTSurvivalRegressionExample")
+      .appName("JavaAFTSurvivalRegressionExample").config("spark.master", "local")
       .getOrCreate();
 
     // $example on$
